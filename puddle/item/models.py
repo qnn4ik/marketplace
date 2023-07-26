@@ -20,7 +20,7 @@ class Item(models.Model):
     price = models.FloatField()
     image = models.ImageField(upload_to='item_images', blank=True, null=True)
     is_sold = models.BooleanField(default=False)
-    # delete item if user is deleted
+    # .CASCADE - delete item if user is deleted
     created_by = models.ForeignKey(User, related_name='items', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now=True)
 
