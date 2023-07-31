@@ -1,21 +1,22 @@
 {% extends 'core/base.html' %}
 
-{% block title %}Sign up{% endblock %}
+{% block title %}Login{% endblock %}
 
 {% block content %}
-<p class="text-2xl">Sign up</p>
+<p class="text-2xl">Login in</p>
 <form class="mt-10" method="post">
     {% csrf_token %}
     {% load widget_tweaks %}
     <div class="grid gap-6 mb-6 md-3">
+        <p class="text-red-600">{{ form.non_field_errors }}</p>
         {% for f in form %}
         <div>
             <label class="block mb-2 text-lg font-semibold" for="{{ f.id_for_label }}">{{f.label}}</label>
-            <p class="text-red-600">{{ f.errors }}</p>
+            <div class="text-red-600 mb-5">{{ f.errors }}</div>
             {{ f|add_class:"border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" }}
-            </div>
+        </div>
         {% endfor %}
-        <button type="submit" class="inline-block mt-6 px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Sign up</button>
+        <button type="submit" class="inline-block mt-6 px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Log in</button>
     </div>
 </form>
 
