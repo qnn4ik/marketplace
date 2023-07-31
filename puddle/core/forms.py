@@ -9,15 +9,15 @@ class SignUpUserForm(UserCreationForm):
         model = User
         fields = ['username', 'email', 'password1', 'password2']
         widgets = {
-            'username': forms.TextInput(),
-            'email': forms.EmailInput(),
-            'password1': forms.PasswordInput(),
-            'password2': forms.PasswordInput()
+            'username': forms.TextInput(attrs={'placeholder': 'John'}),
+            'email': forms.EmailInput(attrs={'placeholder': 'JohnWick23@gmail.com'}),
+            'password1': forms.PasswordInput(attrs={'placeholder': 'Your password'}),
+            'password2': forms.PasswordInput(attrs={'placeholder': 'Repeat your password'})
         }
 
 
 class LoginUserForm(AuthenticationForm):
     """User login form"""
-    username = forms.CharField(label='Username', widget=forms.TextInput())
-    password = forms.CharField(label='Password', widget=forms.PasswordInput())
+    username = forms.CharField(label='Username', widget=forms.TextInput(attrs={'placeholder': 'John'}))
+    password = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'placeholder': 'Your password'}))
 

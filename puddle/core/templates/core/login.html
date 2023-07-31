@@ -4,20 +4,22 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
-<p class="text-2xl">Login in</p>
-<form class="mt-10" method="post">
-    {% csrf_token %}
-    <div class="grid gap-6 mb-6 md-3">
-        <div class="text-red-600">{{ form.non_field_errors }}</div>
-        {% for f in form %}
-        <div>
-            <label class="block mb-2 text-lg font-semibold" for="{{ f.id_for_label }}">{{f.label}}</label>
-            <div class="text-red-600 mb-5">{{ f.errors }}</div>
-            {{ f|add_class:"border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" }}
+<div class="w-2/3 mx-auto p-5 bg-gray-100 rounded-xl">
+    <p class="text-2xl">Log in</p>
+    <div class="text-red-600 mt-5">{{ form.non_field_errors }}</div>
+    <form class="mt-10" method="post">
+        {% csrf_token %}
+        <div class="grid gap-6 mb-6 md-3">
+            {% for f in form %}
+            <div>
+                <label class="block mb-2 text-lg font-semibold" for="{{ f.id_for_label }}">{{f.label}}</label>
+                <div class="text-red-600 mb-5">{{ f.errors }}</div>
+                {{ f|add_class:"border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" }}
+            </div>
+            {% endfor %}
+            <button type="submit" class="inline-block mt-6 px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Log in</button>
         </div>
-        {% endfor %}
-        <button type="submit" class="inline-block mt-6 px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Log in</button>
-    </div>
-</form>
+    </form>
+</div>
 
 {% endblock %}
