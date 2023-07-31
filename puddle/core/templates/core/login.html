@@ -1,4 +1,5 @@
 {% extends 'core/base.html' %}
+{% load widget_tweaks %}
 
 {% block title %}Login{% endblock %}
 
@@ -6,9 +7,8 @@
 <p class="text-2xl">Login in</p>
 <form class="mt-10" method="post">
     {% csrf_token %}
-    {% load widget_tweaks %}
     <div class="grid gap-6 mb-6 md-3">
-        <p class="text-red-600">{{ form.non_field_errors }}</p>
+        <div class="text-red-600">{{ form.non_field_errors }}</div>
         {% for f in form %}
         <div>
             <label class="block mb-2 text-lg font-semibold" for="{{ f.id_for_label }}">{{f.label}}</label>
