@@ -1,5 +1,7 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
+from django.views.generic import CreateView
 
 from .forms import NewItemForm
 from .models import Item
@@ -15,21 +17,17 @@ def detail(request, pk):
     })
 
 
-@login_required  # user must be logged in
-def new(request):
-    """Add new item"""
-    if request.method == 'POST':
-        form = NewItemForm(request.POST, request.FILES)
+class NewItem(LoginRequiredMixin, CreateView):
+    form_class = NewItemForm
+    template_name = 'item/form.html'
 
-        if form.is_valid():
-            item = form.save(commit=False)
-            item.created_by = request.user
-            item.save()
-            return redirect('item:detail', pk=item.id)
-    else:
-        form = NewItemForm()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'New item'
+        return context
 
-    return render(request, 'item/form.html', {
-        'form': form,
-        'title': 'New item',
-    })
+    def form_valid(self, form):
+        item = form.save(commit=False)
+        item.created_by = self.request.user
+        item.save()
+        return redirect('item:detail', pk=item.id)
