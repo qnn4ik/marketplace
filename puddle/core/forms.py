@@ -10,7 +10,7 @@ class SignUpUserForm(UserCreationForm):
         fields = ['username', 'email', 'password1', 'password2']
         widgets = {
             'username': forms.TextInput(attrs={'placeholder': 'John'}),
-            'email': forms.EmailInput(attrs={'placeholder': 'JohnWick23@gmail.com'}),
+            'email': forms.EmailInput(attrs={'required': True, 'placeholder': 'JohnWick23@gmail.com'}),
             'password1': forms.PasswordInput(attrs={'placeholder': 'Your password'}),
             'password2': forms.PasswordInput(attrs={'placeholder': 'Repeat your password'})
         }

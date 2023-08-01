@@ -9,7 +9,7 @@
             {% for item in items %}
             <div>
                 <a href="{% url 'item:detail' item.id %}">
-                    <!--    item:detail takes the app_name (item) and the name (detail in item/urls.py) -->
+                    <!--    item:detail uses app_name (item) and the name (detail in item/urls.py) -->
                     <div><img src="{{ item.image.url }}" class="rounded-t-xl"></div>
                     <div class="p-6 bg-white rounded-b-xl">
                         <h2 class="text-2xl">{{ item.name }}</h2>
