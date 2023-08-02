@@ -1,20 +1,23 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
-from django.views.generic import CreateView, UpdateView, DeleteView
+from django.views.generic import CreateView, UpdateView, DeleteView, DetailView
 
 from .forms import NewItemForm, EditItemForm
 from .models import Item
 
 
-def detail(request, pk):
-    item = get_object_or_404(Item, pk=pk)
-    related_items = Item.objects.filter(category=item.category, is_sold=False).exclude(pk=pk)[0:3]
+class ItemDetail(DetailView):
+    model = Item
+    template_name = 'item/detail.html'
+    context_object_name = 'item'
 
-    return render(request, 'item/detail.html', {
-        'item': item,
-        'related_items': related_items
-    })
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        related_items = Item.objects.filter(category=self.object.category, is_sold=False).exclude(pk=self.object.pk)[0:3]
+        context['related_items'] = related_items
+
+        return context
 
 
 class CreateItem(LoginRequiredMixin, CreateView):
