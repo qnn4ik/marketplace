@@ -1,9 +1,9 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, UpdateView, DeleteView
 
-from .forms import NewItemForm
+from .forms import NewItemForm, EditItemForm
 from .models import Item
 
 
@@ -17,7 +17,9 @@ def detail(request, pk):
     })
 
 
-class NewItem(LoginRequiredMixin, CreateView):
+class CreateItem(LoginRequiredMixin, CreateView):
+    """Create a new item"""
+    model = Item
     form_class = NewItemForm
     template_name = 'item/form.html'
 
@@ -34,9 +36,9 @@ class NewItem(LoginRequiredMixin, CreateView):
 
 
 class EditItem(LoginRequiredMixin, UpdateView):
-    # problem that unauthorized user can access this page
+    """Edit the item content"""
     model = Item
-    form_class = NewItemForm
+    form_class = EditItemForm
     template_name = 'item/form.html'
     success_url = '/'
 
@@ -47,12 +49,16 @@ class EditItem(LoginRequiredMixin, UpdateView):
 
     def form_valid(self, form):
         self.object.save()
-        return redirect('item:detail', pk=self.object.id, created_by=self.request.user)
+        return redirect('item:detail', pk=self.object.id)
 
+    def get_queryset(self):  # returns a query only to a certain user
+        queryset = super(EditItem, self).get_queryset()
+        queryset = queryset.filter(created_by=self.request.user)
+        return queryset
 
 
 @login_required
-def delete(request, pk):
+def delete_item(request, pk):
     item = get_object_or_404(Item, pk=pk, created_by=request.user)
     item.delete()
 
