@@ -1,10 +1,35 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
+from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView, UpdateView, DeleteView, DetailView
 
 from .forms import NewItemForm, EditItemForm
-from .models import Item
+from .models import Item, Category
+
+
+def items(request):
+    query = request.GET.get('query', '')
+    items = Item.objects.filter(is_sold=False)
+    categories = Category.objects.all()
+
+    try:
+        cat_id = int(request.GET.get('category', 0))
+    except ValueError:
+        cat_id = 0
+
+    if cat_id:
+        items = items.filter(category_id=cat_id)
+
+    if query:
+        items = items.filter(Q(name__icontains=query) | Q(description__icontains=query))
+
+    return render(request, 'item/items.html', {
+        'items': items,
+        'query': query,
+        'categories': categories,
+        'cat_id': cat_id,
+    })
 
 
 class ItemDetail(DetailView):
