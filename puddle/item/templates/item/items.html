@@ -3,11 +3,10 @@
 {% block title %}Items{% endblock %}
 
 {% block content %}
-    <div class="pb-6 grid grid-cols-4 gap-4 bg-gray-100">
+    <div class="p-6 grid grid-cols-4 gap-4 bg-gray-100 rounded-xl">
         <div class="col-span-1">
             <form action="{% url 'item:items' %}" method="get">
-                <input class="w-full py-4 px-6 border rounded-xl" type="text" name="query" value="{{ query }}"
-                       placeholder="Find a bike, a chair or a car...">
+                <input class="w-full py-4 px-6 border rounded-xl" type="text" name="query" value="{{ query }}" placeholder="Find a bike, a chair or a car...">
                 <button class="mt-2 py-4 px-8 text-lg bg-teal-500 text-white rounded-xl">Search</button>
             </form>
             <hr class="my-6">

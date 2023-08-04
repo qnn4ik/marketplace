@@ -9,9 +9,9 @@ from .models import Item, Category
 
 
 def items(request):
-    query = request.GET.get('query', '')
     items = Item.objects.filter(is_sold=False)
     categories = Category.objects.all()
+    query = request.GET.get('query', '')
 
     try:
         cat_id = int(request.GET.get('category', 0))
