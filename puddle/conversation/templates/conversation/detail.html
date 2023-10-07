@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+{% load widget_tweaks %}
+
+{% block title %}Conversation{% endblock %}
+
+{% block content %}
+<h1 class="mb-6 text-3xl">Conversation</h1>
+
+<div class="space-y-6">
+    {% for message in conversation.messages.all %}
+        <div class="p-6 flex {% if message.created_by == request.user %}bg-blue-100{% else %}bg-gray-100{% endif %} rounded-xl">
+            <div>
+                <p class="mb-4"><strong>{{ message.created_by.username }}</strong> @ {{ message.created_at }}</p>
+                <p>{{ message.content }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<form class="mt-10" method="post">
+    {% csrf_token %}
+    <div class="grid gap-6 mb-6 md-3">
+        {% for f in form %}
+        <div>
+            <label class="block mb-2 text-lg font-semibold" for="{{ f.id_for_label }}">{{f.label}}</label>
+            <div class="text-red-600 mb-5">{{ f.errors }}</div>
+            {{ f|add_class:"border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" }}
+        </div>
+        {% endfor %}
+        <button type="submit"
+                class="inline-block mt-6 px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Send</button>
+    </div>
+</form>
+{% endblock %}
