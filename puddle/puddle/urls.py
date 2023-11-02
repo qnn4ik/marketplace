@@ -15,5 +15,6 @@ urlpatterns = [
     path('items/', include('item.urls')),
     path('dashboard/', include('dashboard.urls')),
     path('inbox/', include('conversation.urls')),
+    path("__debug__/", include("debug_toolbar.urls")),
     # get rid of the last line
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
