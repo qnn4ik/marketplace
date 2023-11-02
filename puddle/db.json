@@ -1,0 +1,1034 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-07-25T22:21:50.224Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Category object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-07-25T22:22:05.143Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Category object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-07-25T22:22:13.562Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Category object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-07-25T22:33:40.870Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Item object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-07-25T22:34:37.051Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Item object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-07-25T22:35:44.925Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Table",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-07-25T22:36:56.683Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Sport Shoes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-07-26T09:46:43.882Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Car",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-07-30T10:43:36.547Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-07-30T10:44:24.161Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Chair",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-07-31T13:10:10.820Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "user1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-07-31T13:10:10.834Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "user2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-07-31T13:14:39.239Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "user1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-07-31T13:14:39.241Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "user2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-08-01T08:41:52.579Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "user1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-08-01T08:41:52.583Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "user2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-08-01T08:41:52.585Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "8",
+    "object_repr": "user3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-08-01T08:41:52.587Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "9",
+    "object_repr": "user5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-08-01T08:41:52.589Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "10",
+    "object_repr": "user6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-08-01T09:35:26.430Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "T-shirt",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-08-01T09:56:03.743Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "item 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-08-01T10:15:19.143Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Jacket",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Created by\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-08-01T10:15:22.692Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "T-shirt",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Created by\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-08-01T10:15:26.961Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Giraffe toy",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Created by\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-10-07T10:51:59.639Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "ConversationMessage object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Created by\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-10-07T10:52:11.527Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "ConversationMessage object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Created by\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add item",
+    "content_type": 8,
+    "codename": "add_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change item",
+    "content_type": 8,
+    "codename": "change_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete item",
+    "content_type": 8,
+    "codename": "delete_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view item",
+    "content_type": 8,
+    "codename": "view_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add conversation",
+    "content_type": 9,
+    "codename": "add_conversation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change conversation",
+    "content_type": 9,
+    "codename": "change_conversation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete conversation",
+    "content_type": 9,
+    "codename": "delete_conversation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view conversation",
+    "content_type": 9,
+    "codename": "view_conversation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add conversation message",
+    "content_type": 10,
+    "codename": "add_conversationmessage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change conversation message",
+    "content_type": 10,
+    "codename": "change_conversationmessage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete conversation message",
+    "content_type": 10,
+    "codename": "delete_conversationmessage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view conversation message",
+    "content_type": 10,
+    "codename": "view_conversationmessage"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$YDEIN83dspS3cuYQifWc2e$u3OUHQx/CUH2DdiShq6ib02DeZh59BUtSZXdtPItiUs=",
+    "last_login": "2023-10-07T10:59:57.940Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@puddle.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-07-25T22:19:04.728Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$WmcIBX8l4zsyisqzju1gJN$GRyXS0Jh/LiS3y2Pz98TCDE9GBJH82L1Qi01+cIUZD4=",
+    "last_login": "2023-11-02T17:35:18.830Z",
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "",
+    "last_name": "",
+    "email": "user1@hacker.net",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-08-01T08:42:12.917Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "item",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "item",
+    "model": "item"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "conversation",
+    "model": "conversation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "conversation",
+    "model": "conversationmessage"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "01jloxqo5o99m73qm78yug1pjxpm2wjq",
+  "fields": {
+    "session_data": "e30:1qQkiU:MB25NvgrnJbvNr2Vuq3hRm__rGKW7247nJL7iOV4Zpo",
+    "expire_date": "2023-08-15T08:26:54.504Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1l1vr90ul50eg6r41wp4c5t4pvn0f74e",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAURO_C2hDgU0CX7j0D-XxAqgaS0q5M79426UJXk8x7M1_mcZmLX3qa_BjZjUl2-e0C0jvVA8QX1mfj1Oo8jYEfCj9p548W0-d-un8HBXvZ19ZhchmI0MhgTURQhoKwgTIksKBo0AKdFIPQes98zRKUJZKApBHYugHxKzfj:1qQle2:kXnRRhrLfLOJjun2B_P_EnlxBEOdkhZJNSmYz12do0c",
+    "expire_date": "2023-08-15T09:26:22.954Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cjz3tvtv67uz7gxsy2g4sfigy2pr2igu",
+  "fields": {
+    "session_data": "e30:1qQkkQ:g1I74LwmIcDPg81cz91ytYOo24tEDrrgAJb0k5YEs5E",
+    "expire_date": "2023-08-15T08:28:54.492Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fsmsr5yshewuo0yqihuile6si5pv93pa",
+  "fields": {
+    "session_data": "e30:1qQknL:4vRTA2esHWpNPesRuxN316kczaMFZVrLhgS8pPHNM3c",
+    "expire_date": "2023-08-15T08:31:55.306Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jvo3g3k8bv2t1szkzt53pyigg0w5o0a6",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-fyjpcwZrN7vgAHKkOKkQd4dIKaB9M_NeosC21rJ1XspE4iy0FqffEWF8cNsJ3aHdZjnObV0mlLsiD9rlMBM_L4f7d1Ch129tvcqIoIM2KVNS3kUTI7AzYJENUQoum8RWMQV0XoEGdIwWkvbRXMX7A-iuN5Q:1qR8nx:MiNQn8CocWHcCcPo7FhGd-y_Lum2ZF6m-5WA0NK1iRQ",
+    "expire_date": "2023-08-16T10:10:09.990Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ofivni9jnhyo0pnme8pgrwt9hf3j8hxp",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAURO_C2hDgU0CX7j0D-XxAqgaS0q5M79426UJXk8x7M1_mcZmLX3qa_BjZjUl2-e0C0jvVA8QX1mfj1Oo8jYEfCj9p548W0-d-un8HBXvZ19ZhchmI0MhgTURQhoKwgTIksKBo0AKdFIPQes98zRKUJZKApBHYugHxKzfj:1qRaKk:P43AGs8r7S1UGmN_9inbZUqvl-Ana2f2QLT5g-cX690",
+    "expire_date": "2023-08-17T15:33:50.639Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y9hh95ok81svvhniyyq56nf3te6tjqcj",
+  "fields": {
+    "session_data": "e30:1qQkjZ:_QwAJsTC4UW02R3Xc-3XDo3RkMH1pFGM5tfd0XVD7UI",
+    "expire_date": "2023-08-15T08:28:01.770Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ywzhjpqg69wt8js7p34r94bkcrmuju81",
+  "fields": {
+    "session_data": "e30:1qQkk6:rNbSbN-51y0bQTzUe4AlOWvycXrVCg3kMxuGsIQTwE0",
+    "expire_date": "2023-08-15T08:28:34.560Z"
+  }
+},
+{
+  "model": "item.category",
+  "pk": 1,
+  "fields": {
+    "name": "Toys"
+  }
+},
+{
+  "model": "item.category",
+  "pk": 2,
+  "fields": {
+    "name": "Furnitures"
+  }
+},
+{
+  "model": "item.category",
+  "pk": 3,
+  "fields": {
+    "name": "Clothes"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "Teddy bear edited",
+    "description": "Teddy bear description",
+    "price": 200.0,
+    "image": "item_images/teddy.jpg",
+    "is_sold": false,
+    "created_by": 1,
+    "created_at": "2023-08-03T13:51:46.725Z"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 4,
+  "fields": {
+    "category": 3,
+    "name": "Sport Shoes",
+    "description": "This is the sport shoes",
+    "price": 990.99,
+    "image": "item_images/sport_shoes.jpg",
+    "is_sold": false,
+    "created_by": 1,
+    "created_at": "2023-07-25T22:36:56.682Z"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "name": "Car edited2",
+    "description": "This is an edited toy car description",
+    "price": 69.99,
+    "image": "item_images/toy_car.jpeg",
+    "is_sold": false,
+    "created_by": 1,
+    "created_at": "2023-08-02T09:44:44.057Z"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 10,
+  "fields": {
+    "category": 1,
+    "name": "Jiraffe toy edited2",
+    "description": "This is the jiraffe toy description",
+    "price": 9.99,
+    "image": "item_images/giraffe_toy_H6xgd1u.jpg",
+    "is_sold": false,
+    "created_by": 11,
+    "created_at": "2023-08-03T13:51:02.730Z"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 11,
+  "fields": {
+    "category": 1,
+    "name": "Dinosaur toy edited",
+    "description": "This is the dinosaur toy description",
+    "price": 9.99,
+    "image": "item_images/dinosaur_toy.webp",
+    "is_sold": false,
+    "created_by": 11,
+    "created_at": "2023-08-02T10:05:53.021Z"
+  }
+},
+{
+  "model": "conversation.conversation",
+  "pk": 1,
+  "fields": {
+    "item": 5,
+    "created_at": "2023-10-07T10:24:08.278Z",
+    "modified_at": "2023-10-07T11:00:13.866Z",
+    "members": [
+      1,
+      11
+    ]
+  }
+},
+{
+  "model": "conversation.conversationmessage",
+  "pk": 1,
+  "fields": {
+    "conversation": 1,
+    "content": "Hello",
+    "created_at": "2023-10-07T10:24:08.299Z",
+    "created_by": 11
+  }
+},
+{
+  "model": "conversation.conversationmessage",
+  "pk": 2,
+  "fields": {
+    "conversation": 1,
+    "content": "Hello back!",
+    "created_at": "2023-10-07T10:56:55.727Z",
+    "created_by": 1
+  }
+},
+{
+  "model": "conversation.conversationmessage",
+  "pk": 3,
+  "fields": {
+    "conversation": 1,
+    "content": "Do you really want to buy it?",
+    "created_at": "2023-10-07T10:57:26.311Z",
+    "created_by": 1
+  }
+},
+{
+  "model": "conversation.conversationmessage",
+  "pk": 4,
+  "fields": {
+    "conversation": 1,
+    "content": "Yep! I paid for it",
+    "created_at": "2023-10-07T10:57:46.332Z",
+    "created_by": 11
+  }
+},
+{
+  "model": "conversation.conversationmessage",
+  "pk": 5,
+  "fields": {
+    "conversation": 1,
+    "content": "Ok, bro. Got you",
+    "created_at": "2023-10-07T11:00:13.860Z",
+    "created_by": 1
+  }
+}
+]

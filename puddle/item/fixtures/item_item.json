@@ -1,0 +1,72 @@
+[
+{
+  "model": "item.item",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "Teddy bear edited",
+    "description": "Teddy bear description",
+    "price": 200.0,
+    "image": "item_images/teddy.jpg",
+    "is_sold": false,
+    "created_by": 1,
+    "created_at": "2023-08-03T13:51:46.725Z"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 4,
+  "fields": {
+    "category": 3,
+    "name": "Sport Shoes",
+    "description": "This is the sport shoes",
+    "price": 990.99,
+    "image": "item_images/sport_shoes.jpg",
+    "is_sold": false,
+    "created_by": 1,
+    "created_at": "2023-07-25T22:36:56.682Z"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "name": "Car edited2",
+    "description": "This is an edited toy car description",
+    "price": 69.99,
+    "image": "item_images/toy_car.jpeg",
+    "is_sold": false,
+    "created_by": 1,
+    "created_at": "2023-08-02T09:44:44.057Z"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 10,
+  "fields": {
+    "category": 1,
+    "name": "Jiraffe toy edited2",
+    "description": "This is the jiraffe toy description",
+    "price": 9.99,
+    "image": "item_images/giraffe_toy_H6xgd1u.jpg",
+    "is_sold": false,
+    "created_by": 11,
+    "created_at": "2023-08-03T13:51:02.730Z"
+  }
+},
+{
+  "model": "item.item",
+  "pk": 11,
+  "fields": {
+    "category": 1,
+    "name": "Dinosaur toy edited",
+    "description": "This is the dinosaur toy description",
+    "price": 9.99,
+    "image": "item_images/dinosaur_toy.webp",
+    "is_sold": false,
+    "created_by": 11,
+    "created_at": "2023-08-02T10:05:53.021Z"
+  }
+}
+]
