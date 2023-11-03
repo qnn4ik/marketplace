@@ -3,6 +3,7 @@ from django.contrib.auth.views import LoginView
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
+from django.db.models import Count
 
 from core.forms import SignUpUserForm, LoginUserForm
 from item.models import Category, Item
@@ -10,7 +11,7 @@ from item.models import Category, Item
 
 def index(request):
     items = Item.objects.filter(is_sold=False)
-    categories = Category.objects.all()
+    categories = Category.objects.all().annotate(total=Count('items'))
 
     return render(request, 'core/index.html', {
         'categories': categories,

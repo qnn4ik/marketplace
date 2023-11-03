@@ -10,11 +10,11 @@
             <div>
                 <a href="{% url 'item:detail' item.id %}">
                     <!--    item:detail uses app_name (item) and the name (detail in item/urls.py) -->
-                        {% if item.image.url is not None %}
-                        <div><img src="{{ item.image.url }}" class="rounded-t-xl"></div>
-                        {% else %}
-                        <div class="rounded-t-xl">No image</div>
-                        {% endif %}
+                    {% if item.image.url is not None %}
+                    <div><img src="{{ item.image.url }}" class="rounded-t-xl"></div>
+                    {% else %}
+                    <div class="rounded-t-xl">No image</div>
+                    {% endif %}
                     <div class="p-6 bg-white rounded-b-xl">
                         <h2 class="text-2xl">{{ item.name }}</h2>
                         <p class="text-gray-500">Price: {{ item.price }}</p>
@@ -30,10 +30,10 @@
         <div class="grid grid-cols-3 gap-3">
             {% for category in categories %}
             <div>
-                <a href="#">
+                <a href="{% url 'item:items'%}?category={{ category.id }}">
                     <div class="p-6 bg-white rounded-b-xl">
                         <h2 class="text-2xl">{{ category.name }}</h2>
-                        <p class="text-gray-500">items: {{ category.items.count }}</p>
+                        <p class="text-gray-500">items: {{ category.total }}</p>
                     </div>
                 </a>
             </div>
